@@ -9,4 +9,6 @@ routes.get("/other", myController.otherRoute);
 
 routes.get("/ttech", myController.getAllStudents);
 
+routes.use("/students", require("./students"));
+
 module.exports = routes;
